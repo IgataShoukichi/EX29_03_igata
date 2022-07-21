@@ -10,12 +10,7 @@ namespace Ex_2022_Template
                 InputUtility.InputFloat("高さ"),
                 InputUtility.InputFloat("奥行"));
             Console.WriteLine($"Boxの表面積={Box.GetSurface()}boxの体積{Box.GetVolume()}");
-        }
-        {
-            var name = InputUtility.Input("Name:");
-            var age = InputUtility.InputNumber("Age:", 120);
-            Console.WriteLine($"Hello {name}! \n U are {age} yeaes old.");
-        }
+        }        
     }
     class Box
     {
@@ -34,8 +29,8 @@ namespace Ex_2022_Template
             return (width*height+depth*height+width*depth)*2;
         }
         public float GetVolume()
-    {
+        {
         return width*height*depth;
-    }
+        }
     }
 }

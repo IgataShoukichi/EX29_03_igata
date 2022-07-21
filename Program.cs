@@ -5,10 +5,12 @@ namespace Ex_2022_Template
     {
         static void Main(string[] args)
         {
-            Box.box=new Box(
+            Box.box=new Box
+                (
                 InputUtility.InputFloat("幅"),
                 InputUtility.InputFloat("高さ"),
-                InputUtility.InputFloat("奥行"));
+                InputUtility.InputFloat("奥行")
+                );
             Console.WriteLine($"Boxの表面積={Box.GetSurface()}boxの体積{Box.GetVolume()}");
         }        
     }

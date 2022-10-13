@@ -49,33 +49,33 @@ namespace Ex29_03_Igatashoukichi
     }
     static class Cylinder
     {
-        static public float GetSurface(float bottom, float height)
+        public static float GetSurface(float bottom, float height)
         {
             return bottom * 2.0f * MathF.PI * height + bottom * bottom * MathF.PI * 2.0f;
         }
-        static public float GetVolume(float bottom, float height)
+        public static float GetVolume(float bottom, float height)
         {
             return bottom * bottom * MathF.PI * height;
         }
     }
     static class Sphere
     {
-        static public float GetSurface(float radius)
+        public static float GetSurface(float radius)
         {
             return 4.0f * MathF.PI * radius * radius;
         }
-        static public float GetVolume(float radius)
+        public static float GetVolume(float radius)
         {
             return (4.0f / 3.0f) * MathF.PI * radius * radius * radius;
         }
     }
     static class TriangularPrism
     {
-        static public double GetSurface(float bottom, float bottomheight, float height)
+        public static double GetSurface(float bottom, float bottomheight, float height)
         {
             return bottom * bottomheight + (bottom + bottomheight + Math.Sqrt(bottom * bottom + bottomheight * bottomheight)) * height;
         }
-        static public float GetVolume(float bottom, float bottomheight, float height)
+        public static float GetVolume(float bottom, float bottomheight, float height)
         {
             return bottom * bottomheight / 2.0f * height;
         }

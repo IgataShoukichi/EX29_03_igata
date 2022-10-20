@@ -5,20 +5,24 @@ namespace Ex29_03_Igatashoukichi
     {
         static void Main()
         {
-            Console.WriteLine("直方体");
+            Console.WriteLine("直方体の表面積");
             Console.WriteLine("表面積" + Box.GetSurface(InputFloat("幅"), InputFloat("高さ"), InputFloat("奥行")));
+            Console.WriteLine("直方体の体積")
             Console.WriteLine("体積" + Box.GetVolume(InputFloat("幅"), InputFloat("高さ"), InputFloat("奥行")));
 
-            Console.WriteLine("\n円柱");
+            Console.WriteLine("\n円柱の表面積");
             Console.WriteLine("表面積" + Cylinder.GetSurface(InputFloat("底面の半径"), InputFloat("高さ")));
+            Console.WriteLine("円柱の体積")
             Console.WriteLine("体積" + Cylinder.GetVolume(InputFloat("底面の半径"), InputFloat("高さ")));
 
-            Console.WriteLine("\n球");
+            Console.WriteLine("\n球の表面積");
             Console.WriteLine("表面積" + Sphere.GetSurface(InputFloat("半径")));
+            Console.WriteLine("球の体積")
             Console.WriteLine("体積" + Sphere.GetVolume(InputFloat("半径")));
 
-            Console.WriteLine("\n三角柱");
+            Console.WriteLine("\n三角柱の表面積");
             Console.WriteLine("表面積" + TriangularPrism.GetSurface(InputFloat("底面の底辺"), InputFloat("底面の高さ"), InputFloat("高さ")));
+            Console.WriteLine("三角柱の体積")
             Console.WriteLine("体積" + TriangularPrism.GetVolume(InputFloat("底面の底辺"), InputFloat("底面の高さ"), InputFloat("高さ")));
         }
 
